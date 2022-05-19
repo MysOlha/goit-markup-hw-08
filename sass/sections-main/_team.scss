@@ -1,0 +1,81 @@
+.team {
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--color-text-tittle);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list .team-item+.team-item {
+    margin-left: 30px;
+}
+
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--color-text-tittle);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-work {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.about-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-soc {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+}
+
+.team-soc-link {
+    @include flexCenter;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #AFB1B8;
+    transition: background-color 250ms var(--time), color 250ms var(--time);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+    }
+}
+
+.team-svg {
+    fill: currentColor;
+}
+.team-soc-item+.team-soc-item {
+    margin-left: 10px;
+}

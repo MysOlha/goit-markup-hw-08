@@ -1,0 +1,46 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+    font-family: "Roboto", "Tahoma", sans-serif;
+    letter-spacing: 0.03em;
+    background-color: var(--base-color);
+    color: var(--color-text-section);
+    }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+ .section-tittle {
+     color: var(--color-text-tittle);
+ }

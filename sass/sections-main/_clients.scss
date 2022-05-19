@@ -1,0 +1,54 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-text-tittle);
+    margin-bottom: 50px;
+}
+
+.clients-logo__list {
+    display: flex;
+    margin: 0 auto;
+}
+
+.clients-logo__link {
+    @include flexCenter;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition: border 250ms var(--time), color 250ms var(--time);
+
+    &:hover,
+    &:focus {
+    border: 1px solid #2196f3;
+    color: var(--accent-color);
+    }
+}
+
+
+
+.clients-logo__item+.clients-logo__item {
+    margin-left: 30px;
+}
+
+.clients-logo__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    transition: fill 250ms var(--time);
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+    }
+}
+

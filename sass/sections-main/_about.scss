@@ -1,0 +1,45 @@
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.about__item {
+    max-width: 270px;
+}
+
+
+.about__list {
+    display: flex;
+}
+
+.about__list .about__item+.about__item {
+    margin-left: 30px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--color-text-tittle);
+    margin-bottom: 10px;
+}
+
+.about__description {
+    font-size: 14px;
+    line-height: 1.71;
+    max-width: 270px;
+}
+
+.about__logo {
+    @include flexCenter;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.about__icons {
+    width: 70px;
+    height: 70px;
+}
