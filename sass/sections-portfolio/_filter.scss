@@ -24,11 +24,21 @@
 
 .filter {
     margin-bottom: 50px;
-    
-    &-list {
-    display: flex;
-    justify-content: center;
 }
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -21px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }  
+}
+    
+.button-list {
+    margin-bottom: 21px;
 }
 
 .button-list+.button-list {

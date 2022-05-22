@@ -17,8 +17,10 @@
 }
 
 .footer-main>div {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    align-items: baseline;   
+    }
 }
 
 .footer-adress {
@@ -49,6 +51,9 @@
 }
 
 .footer-go {
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -57,7 +62,20 @@
 }
 
 .adress-go {
+    @media screen and (max-width: 1199px) {
+      text-align: center;  
+    }
+    
+    @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    }
+    
+}
+
+.links-go {
+    @media screen and (max-width: 767px) {
+       margin-top: 60px;
+    }
 }
 
 .footer-link-soc {
@@ -90,12 +108,40 @@
 }
 
 .footer-list {
+    @media screen and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
+    }
     display: flex;
     margin-top: 20px;
 }
 
+.footer-tablet {
+   @media screen and (min-width: 768px){
+       display: flex;
+   }
+   @media screen and (max-width: 1199px) {
+        align-items: baseline;
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px; 
+   }     
+    
+}
+
 .footer-subskr {
-    margin-left: 93px;
+    margin-top: 60px;
+    text-align: center;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 166px;
+    padding-right: 152px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+     margin-left: 93px;  
+     text-align: start;
+    }
 }
 
 .subskr-tittle {
@@ -108,15 +154,23 @@
 }
 
 .subskr-input {
-    width: 358px;
+    width: 100%;
+    max-width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+    color: #ffffff;
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
     margin-right: 12px;
     padding-left: 16px;
-    color: #ffffff;
+    width: 358px;
+    }
+ 
 }
 
 .subskr-button {
@@ -133,8 +187,8 @@
     color: #ffffff;
     cursor: pointer;
     padding: 13px 28px;
-    margin: auto;
     border-color: transparent;
+    margin: auto;
 }
 
 .svg-send {
@@ -142,5 +196,8 @@
 }
 
 .form-flex {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex; 
+    }
+   
 }
