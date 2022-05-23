@@ -60,15 +60,23 @@ textarea {
     }
 }
 
+.text-checkbox {
+    font-weight: 400;
+    color: #757575;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
 .text-check {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+    justify-content: center; 
 }
 
 .checkbox {
@@ -103,4 +111,12 @@ textarea {
 
 .policy-link {
     color: var(--accent-color);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
 }
