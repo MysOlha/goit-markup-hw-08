@@ -12,6 +12,7 @@
     transition: transform 250ms var(--time);
     width: 100%;
     max-width: 450px;
+    overflow-y: auto;
 
     @media screen and (min-width: 1200px) {
     min-height: 581px;
