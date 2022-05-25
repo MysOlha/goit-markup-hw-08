@@ -22,23 +22,16 @@
     <!--header-->
     <header>
       <div class="container header">
+        <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span>
+        </a>
         <div class="mobile-menu">
-          <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span>
-          </a>
-          <button type="button mob-button" 
-          class="menu-mobile menu-open-btn " >
-            <svg class="menu-mobile-svg" 
-            width="40" 
-            height="40"
-            aria-label="Переключатель меню">
+          <button type="button mob-button" class="menu-mobile menu-open-btn ">
+            <svg class="menu-mobile-svg" width="40" height="40" aria-label="Переключатель меню">
               <use class="icon-open" href="./images/symbol-defs2.svg#icon-menu"></use>
-              </svg>
+            </svg>
           </button>
         </div>
-        <span class="logo-tab-desk">
-          <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span>
-          </a>
-        </span>
+       
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -54,16 +47,16 @@
         </nav>
 
         <ul class="navigation__list list navigation__adress">
-          <li class="navigation__item">
-            <a href="mailto:info@devstudio.com" class="navigation__link ">
-              <svg class="navigation__icon" width="16" height="12">
+          <li class="navigation__item" id="nav-item-tab">
+            <a href="mailto:info@devstudio.com" class="navigation__link nav-link-tab">
+              <svg class="navigation__icon icon-envelope-tab" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li class="navigation__item">
-            <a href="tel:+380961111111" class="navigation__link">
-              <svg class="navigation__icon" width="10" height="16">
+          <li class="navigation__item" id="nav-item-tab" >
+            <a href="tel:+380961111111" class="navigation__link nav-link-tab">
+              <svg class="navigation__icon icon-smartphone-tab" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a>
@@ -75,9 +68,7 @@
 
       <div class="mobile-menu-header is-hidden">
         <div class="mobile-menu">
-          <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span>
-          </a>
-          <button type="button mob-button" class="menu-mobile menu-open-btn ">
+          <button type="button mob-button" class="menu-mobile menu-open-btn is-hidden">
             <svg class="menu-mobile-svg" width="40" height="40" aria-label="Переключатель меню">
               <use class="icon-open" href="./images/symbol-defs2.svg#icon-menu"></use>
             </svg>
