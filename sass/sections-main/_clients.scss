@@ -33,7 +33,7 @@
 
 .clients-logo__link {
     @include flexCenter;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;
@@ -46,6 +46,12 @@
     border: 1px solid #2196f3;
     color: var(--accent-color);
     }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+   }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .clients-logo__item {

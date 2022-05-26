@@ -1,5 +1,7 @@
 .footer {
     background-color: #2f303a;
+    @media screen and (min-width: 1200px) {
+   }
 }
 
 .logo-footer {
@@ -19,7 +21,7 @@
 .footer-main>div {
     @media screen and (min-width: 1200px) {
       display: flex;
-    align-items: baseline;   
+      align-items: baseline;   
     }
 }
 
@@ -117,11 +119,12 @@
 }
 
 .footer-tablet {
+    align-items: baseline;
    @media screen and (min-width: 768px){
        display: flex;
    }
    @media screen and (max-width: 1199px) {
-        align-items: baseline;
+        
         justify-content: space-between;
         padding-left: 76px;
         padding-right: 89px; 
@@ -141,10 +144,12 @@
     @media screen and (min-width: 1200px) {
      margin-left: 93px;  
      text-align: start;
+    margin-top: 0px;
     }
 }
 
 .subskr-tittle {
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -201,3 +206,4 @@
     }
    
 }
+

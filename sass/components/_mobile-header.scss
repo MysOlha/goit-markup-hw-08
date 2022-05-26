@@ -1,10 +1,6 @@
-
-
 .mobile-menu {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ display: block;
+ margin-left: auto;
 }
 
 .mobile-menu-header,
@@ -13,11 +9,9 @@
         display: none;
     }
 }
+.menu-close-btn,
+.menu-open-btn {
 
-.menu-mobile {
-    position: absolute;
-    top: 10px;
-    right: 15px;
     width: 40px;
     height: 40px;
     
@@ -25,15 +19,17 @@
     border-color: transparent;
     padding: 0;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: fill 250ms var(--time);
 
     &:hover,
     &:focus {
         fill: var(--accent-color);
     }
+}
+.menu-close-btn {
+   position: absolute;
+   top: 10px;
+   right: 15px; 
 }
 
 .icon-close {
@@ -127,9 +123,7 @@
     color: var(--accent-color);
     padding-left: 10px;
     padding-right: 10px;
-    
-    
-}
+ }
 
 .mob-soc-list .mob-soc-list__item + .mob-soc-list__item {
     border-left: 1px solid rgba(33, 33, 33, 0.2);
